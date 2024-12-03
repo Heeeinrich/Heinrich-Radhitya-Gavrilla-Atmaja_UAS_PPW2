@@ -1,3 +1,5 @@
+@extends('layouts')
+@section('content')
 <link rel="stylesheet" href="{{ asset('dataTables.bootstrap5.') }}" />
 
 
@@ -10,3 +12,6 @@
         new DataTable('.datatable');
     });
 </script>
+@endsection
+
+
