@@ -1,5 +1,7 @@
+@extends('layouts')
 
-    <h2>Data Transaksi</h2>
+@section('content')
+<h2>Data Transaksi</h2>
     <div class="card">
         <div class="card-header bg-white">
             <a href="{{ route('dashboard') }}" class="btn btn-outline-danger">Kembali</a>
@@ -46,3 +48,9 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(function() {
+            $('#transaksiTable').DataTable();
+        });
+    </script>
+@endsection
