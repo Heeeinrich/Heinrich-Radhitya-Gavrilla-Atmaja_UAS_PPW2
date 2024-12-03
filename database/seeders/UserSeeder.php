@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Super Admin',
             'email' => 'admin@mail.com',
-            'password' => Hash::make('admin'),
+            'password' => Hash::make('argon2id'),
         ]);
     }
 }
