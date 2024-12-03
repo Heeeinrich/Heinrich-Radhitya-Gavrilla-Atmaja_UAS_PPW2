@@ -1,5 +1,6 @@
-
-    <h2>Data Detail Transaksi</h2>
+@extends('layouts')
+@section('content')
+<h2>Data Detail Transaksi</h2>
     <div class="card">
         <div class="card-header bg-white">
             <a href="{{ route('transaksi.index') }}" class="btn btn-outline-danger">Kembali</a>
@@ -72,4 +73,4 @@
             </table>
         </div>
     </div>
-
+@endsection
